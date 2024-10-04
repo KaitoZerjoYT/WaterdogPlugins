@@ -2,7 +2,7 @@ Displays all WaterdogPE plugins
 
 Command: 
 
-- /waterdogplugins or /wdpl [pluginname]
+- /waterdogplugins [pluginname] or /wdpl [pluginname]
 Permission:
 
 - waterdog.command.plugins
