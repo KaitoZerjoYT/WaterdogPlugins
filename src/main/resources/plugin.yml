@@ -1,0 +1,7 @@
+name: WaterdogPlugins
+version: 1.0.0
+main: io.github.kaitozerjo.Main
+author: Kaito
+
+commands:
+  waterdogplugins:
