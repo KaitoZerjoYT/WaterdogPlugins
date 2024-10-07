@@ -32,7 +32,6 @@ public class PluginCommand extends Command {
         }
 
         if (args.length == 0) {
-            // List all installed plugins
             String pluginList = Arrays.stream(plugins)
                     .map(p -> p.getDescription().getName())
                     .collect(Collectors.joining(", "));
@@ -49,9 +48,9 @@ public class PluginCommand extends Command {
                 sender.sendMessage("§cPlugin not found: " + pluginName);
             } else {
                 sender.sendMessage(String.format(plugin.getDescription().getName() + ":"));
-                sender.sendMessage(String.format("§fVersion: §a%s", plugin.getDescription().getVersion()));
+                sender.sendMessage(String.format("§fVersion: §6%s", plugin.getDescription().getVersion()));
                 sender.sendMessage(String.format("§fAuthor: §e%s", plugin.getDescription().getAuthor()));
-                sender.sendMessage(String.format("§fDescription: §7%s", plugin.getDescription()));
+                sender.sendMessage(String.format("§fDescription: §a%s", plugin.getDescription()));
             }
         }
 
